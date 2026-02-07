@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your FREE Car Shipping Quote | OK Car Shipping LLC</title>
+    <meta name="description" content="Get a free, accurate car shipping quote from OK Car Shipping LLC. No upfront fees. We're your expert brokerage partner managing the entire transport process for you.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #e63946;
+            --primary-dark: #c1121f;
+            --secondary: #003049;
+            --accent: #f77f00;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        .logo-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        .logo-text p {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .contact-header {
+            text-align: right;
+        }
+
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .phone i {
+            color: var(--primary);
+            margin-right: 8px;
+        }
+
+        .hours {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 48, 73, 0.9), rgba(0, 48, 73, 0.85)), url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .badge i {
+            margin-right: 8px;
+            color: var(--accent);
+        }
+
+        /* Main Content */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 60px 0;
+        }
+
+        .main-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .sidebar {
+            flex: 0 0 350px;
+        }
+
+        @media (max-width: 992px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                flex: 1;
+                width: 100%;
+            }
+        }
+
+        /* Blog Content */
+        .blog-content {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 40px;
+        }
+
+        .blog-content h2 {
+            color: var(--secondary);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .blog-content h3 {
+            color: var(--secondary);
+            font-size: 1.4rem;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        .blog-content p {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .advantage-box {
+            background-color: #e7f5ff;
+            border-left: 4px solid var(--secondary);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .advantage-list {
+            list-style-type: none;
+            margin: 20px 0;
+        }
+
+        .advantage-list li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+        }
+
+        .advantage-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px 15px;
+            background-color: var(--light);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .step h4 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .cta-box {
+            background-color: var(--secondary);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+
+        /* Quote Form */
+        .quote-form-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            position: sticky;
+            top: 100px;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-header h3 {
+            color: var(--secondary);
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .form-header p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .quote-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .quote-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .quote-form input,
+        .quote-form select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .quote-form input:focus,
+        .quote-form select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 15px rgba(230, 57, 70, 0.2);
+        }
+
+        .submit-btn i {
+            margin-right: 8px;
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .form-note i {
+            color: var(--primary);
+            margin-right: 5px;
+        }
+
+        .benefits-sidebar {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: var(--light);
+            border-radius: 8px;
+        }
+
+        .benefits-sidebar h4 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .benefit-item i {
+            color: var(--primary);
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-section h4:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .footer-links {
+            list-style-type: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--accent);
+            width: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            .contact-header {
+                text-align: center;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .blog-content, .quote-form-container {
+                padding: 25px 20px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>OK <span>Car Shipping</span> LLC</h1>
+                    <p>Nationwide Auto Transport Brokers</p>
+                </div>
+            </div>
+            <div class="contact-header">
+                <div class="phone">
+                    <i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55
+                </div>
+                <div class="hours">Mon-Sun 8AM-8PM EST</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Get Your FREE, Accurate Car Shipping Quote</h2>
+            <p>No upfront fees. No commitment. Just a precise market estimate from America's trusted auto transport brokerage.</p>
+            <div class="hero-badges">
+                <div class="badge"><i class="fas fa-shield-alt"></i> Licensed & Bonded Broker</div>
+                <div class="badge"><i class="fas fa-check-circle"></i> No Upfront Payment</div>
+                <div class="badge"><i class="fas fa-network-wired"></i> Vetted Carrier Network</div>
+                <div class="badge"><i class="fas fa-star"></i> A+ BBB Rating</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container content-wrapper">
+        <!-- Blog Content -->
+        <main class="main-content">
+            <article class="blog-content">
+                <h2>Get Your FREE Quote & Let Us Do the Heavy Lifting</h2>
+                <p>You need to ship your car. The internet is a maze of websites, flashing prices, and confusing promises. You know you need a professional driver with the right equipment, but how do you find one you can trust?</p>
+                
+                <div class="warning-box">
+                    <p><strong>Here's the truth:</strong> In the U.S. auto transport industry, individual customers do not book directly with drivers. Your choice isn't "broker vs. carrier"—it's <strong>which broker will be your relentless advocate, your logistics expert, and your shield against risk.</strong></p>
+                </div>
+                
+                <h3>The Danger of "Going Direct" (Or Choosing a Passive Broker)</h3>
+                <p>Think you can cut out the middleman and save? Think again. Without a broker like us, you are exposed:</p>
+                
+                <ul class="advantage-list">
+                    <li><strong>The Vetting Vacuum:</strong> How do you verify a driver's FMCSA license, insurance coverage, and safety record?</li>
+                    <li><strong>The Pricing Gambit:</strong> Negotiating with carriers is a full-time job. Without market knowledge, you'll likely overpay.</li>
+                    <li><strong>The Communication Black Hole:</strong> With a direct driver, your calls may go unanswered during transit.</li>
+                    <li><strong>The Accountability Gap:</strong> If something goes wrong, a single driver may vanish.</li>
+                </ul>
+                
+                <div class="advantage-box">
+                    <h4>We are not a passive booking agency. We are your active transport manager.</h4>
+                </div>
+                
+                <h3>The OK Car Shipping LLC Brokerage Advantage</h3>
+                <p>When you get a quote with us, you're activating a professional service designed to secure the best possible move for your vehicle.</p>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Intelligent Estimate</h4>
+                        <p>Get a data-driven market estimate based on real-time shipping data.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>We Find the Driver</h4>
+                        <p>We negotiate with our vetted carrier network to find the perfect match.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Final "Book-It" Price</h4>
+                        <p>Review and approve the locked-in price before we book anything.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>White-Glove Service</h4>
+                        <p>Your dedicated coordinator manages everything from pickup to delivery.</p>
+                    </div>
+                </div>
+                
+                <h3>Why Waiting Costs You Money & Options</h3>
+                <p>The transport market is a live auction in motion. Capacity tightens, fuel prices shift, and the best carriers get booked. <strong>Procrastination doesn't save money; it costs you leverage, choice, and peace of mind.</strong></p>
+                
+                <div class="cta-box">
+                    <h3>The Critical Choice: Be a Bargain Hunter or a Smart Shipper</h3>
+                    <p>You can scour the internet for the lowest estimate and shoulder all the risk yourself, or partner with OK Car Shipping LLC and leverage our expertise, network, and advocacy.</p>
+                    <p><strong>Your vehicle is too important to be a commodity. It deserves a dedicated advocate.</strong></p>
+                </div>
+            </article>
+        </main>
+        
+        <!-- Quote Form Sidebar -->
+        <aside class="sidebar">
+            <div class="quote-form-container">
+                <div class="form-header">
+                    <h3>Get Your FREE Market Estimate</h3>
+                    <p>No commitment • No upfront payment • Accurate pricing</p>
+                </div>
+                
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-group">
+                        <label for="fromZip">Pickup ZIP Code *</label>
+                        <input type="text" id="fromZip" name="fromZip" placeholder="e.g., 90210" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="toZip">Delivery ZIP Code *</label>
+                        <input type="text" id="toZip" name="toZip" placeholder="e.g., 33101" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicleYear">Vehicle Year *</label>
+                            <input type="number" id="vehicleYear" name="vehicleYear" min="1900" max="2024" placeholder="2020" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicleMake">Vehicle Make *</label>
+                            <input type="text" id="vehicleMake" name="vehicleMake" placeholder="Toyota" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vehicleModel">Vehicle Model *</label>
+                        <input type="text" id="vehicleModel" name="vehicleModel" placeholder="Camry" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="transportType">Transport Type *</label>
+                        <select id="transportType" name="transportType" required>
+                            <option value="">Select an option</option>
+                            <option value="open">Open Transport (Most Common)</option>
+                            <option value="enclosed">Enclosed Transport (Luxury/Classic)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pickupDate">Earliest Pickup Date</label>
+                            <input type="date" id="pickupDate" name="pickupDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicleCondition">Vehicle Condition</label>
+                            <select id="vehicleCondition" name="vehicleCondition">
+                                <option value="running">Running</option>
+                                <option value="non-running">Non-Running</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-calculator"></i> GET MY FREE ESTIMATE NOW
+                    </button>
+                    
+                    <div class="form-note">
+                        <p><i class="fas fa-lock"></i> Your information is secure. We'll never share your details.</p>
+                        <p><i class="fas fa-phone"></i> A transport specialist will contact you within 30 minutes.</p>
+                    </div>
+                </form>
+                
+                <div class="benefits-sidebar">
+                    <h4>Why Get a Quote With Us?</h4>
+                    <div class="benefit-item">
+                        <i class="fas fa-search-dollar"></i>
+                        <div>
+                            <strong>Accurate Market Estimate</strong>
+                            <p>Our proprietary system analyzes real-time data for your specific route.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-user-shield"></i>
+                        <div>
+                            <strong>No Upfront Payment</strong>
+                            <p>You pay nothing until you approve the final carrier and locked-in price.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-network-wired"></i>
+                        <div>
+                            <strong>Vetted Carrier Network</strong>
+                            <p>We only work with licensed, insured carriers with proven track records.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-headset"></i>
+                        <div>
+                            <strong>Dedicated Coordinator</strong>
+                            <p>You get a personal point of contact from quote to delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OK Car Shipping LLC</h4>
+                    <p>Your trusted auto transport brokerage partner. We connect you with vetted, professional carriers across the United States.</p>
+                    <div class="contact-info" style="margin-top: 20px;">
+                        <p><i class="fas fa-map-marker-alt"></i> Nationwide Service Across USA</p>
+                        <p><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55</p>
+                        <p><i class="fas fa-envelope"></i> quotes@okcarshipping.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Get a Quote</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Open Auto Transport</a></li>
+                        <li><a href="#">Enclosed Car Shipping</a></li>
+                        <li><a href="#">Door-to-Door Service</a></li>
+                        <li><a href="#">Motorcycle Shipping</a></li>
+                        <li><a href="#">Classic Car Transport</a></li>
+                        <li><a href="#">Military & PCS Moves</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> OK Car Shipping LLC. All rights reserved. | FMCSA Licensed Broker | DOT Registered</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">This is a brokerage service. OK Car Shipping LLC arranges transportation services and is not a motor carrier.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Set min date for pickup to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('pickupDate').min = today;
+        
+        // Set a default date 7 days from now
+        const nextWeek = new Date();
+        nextWeek.setDate(nextWeek.getDate() + 7);
+        const nextWeekFormatted = nextWeek.toISOString().split('T')[0];
+        document.getElementById('pickupDate').value = nextWeekFormatted;
+        
+        // Form submission handler
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const zipRegex = /^\d{5}(-\d{4})?$/;
+            const fromZip = document.getElementById('fromZip').value;
+            const toZip = document.getElementById('toZip').value;
+            
+            if (!zipRegex.test(fromZip)) {
+                alert('Please enter a valid pickup ZIP code (5 digits)');
+                return;
+            }
+            
+            if (!zipRegex.test(toZip)) {
+                alert('Please enter a valid delivery ZIP code (5 digits)');
+                return;
+            }
+            
+            // In a real application, you would send this data to your server
+            // For this demo, we'll just show a success message
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> PROCESSING YOUR REQUEST...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> QUOTE REQUEST SUBMITTED!';
+                submitBtn.style.backgroundColor = '#28a745';
+                
+                // Show success message
+                alert('Thank you! Your quote request has been submitted. A transport specialist will contact you within 30 minutes at the phone number provided.');
+                
+                // In a real application, you would redirect or show a thank you page
+                // window.location.href = '/thank-you';
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('quoteForm').reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = '';
+                }, 3000);
+            }, 1500);
+        });
+        
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

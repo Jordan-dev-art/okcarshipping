@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Transport Services | Dealers & Private Customers | OK Car Shipping LLC</title>
+    <meta name="description" content="Professional auto transport services for car dealers & private customers. Open & enclosed car shipping, door-to-door service, nationwide coverage. Free quotes. A+ BBB rating.">
+    <meta name="keywords" content="car shipping services, auto transport for dealers, private car shipping, dealership vehicle transport, car haulers, vehicle shipping, cross country car shipping, affordable car shipping, door to door car shipping, enclosed auto transport, motorcycle shipping, RV transport, classic car transport, luxury car shipping">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #e63946;
+            --primary-dark: #c1121f;
+            --secondary: #003049;
+            --accent: #f77f00;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #fff;
+            padding-top: 130px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Sticky Get Quote Button */
+        .sticky-quote-btn {
+            position: fixed;
+            top: -80px;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 9999;
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .sticky-quote-btn.show {
+            top: 80px;
+        }
+
+        .sticky-quote-btn .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sticky-quote-btn p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .sticky-btn {
+            background-color: white;
+            color: var(--primary);
+            border: none;
+            border-radius: 4px;
+            padding: 10px 25px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .sticky-btn:hover {
+            background-color: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header-top {
+            background-color: var(--secondary);
+            color: white;
+            padding: 8px 0;
+        }
+
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        .header-contact span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .header-contact i {
+            color: var(--accent);
+        }
+
+        .header-social a {
+            color: white;
+            margin-left: 15px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .header-social a:hover {
+            color: var(--accent);
+        }
+
+        .header-main {
+            padding: 15px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-right: 12px;
+        }
+
+        .logo-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.9rem;
+            color: var(--secondary);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        .logo-text p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu a {
+            color: var(--dark);
+            text-decoration: none;
+            padding: 10px 18px;
+            font-weight: 500;
+            transition: var(--transition);
+            display: block;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .nav-menu a.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .nav-cta {
+            margin-left: 20px;
+        }
+
+        .nav-cta-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-cta-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 48, 73, 0.92), rgba(0, 48, 73, 0.88)), url('https://images.unsplash.com/photo-1563720223485-8d6d5c5c8d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 90px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 900px;
+            margin: 0 auto 35px;
+            opacity: 0.9;
+        }
+
+        .breadcrumb {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            opacity: 0.7;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            color: var(--secondary);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 5px;
+            background-color: var(--primary);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title p {
+            color: var(--gray);
+            max-width: 800px;
+            margin: 25px auto 0;
+            font-size: 1.2rem;
+        }
+
+        /* Customer Type Sections */
+        .customer-type-section {
+            padding: 100px 0;
+        }
+
+        .customer-type-section:nth-child(even) {
+            background-color: var(--light);
+        }
+
+        .customer-type-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
+
+        .customer-icon {
+            font-size: 4rem;
+            color: var(--primary);
+            background-color: rgba(230, 57, 70, 0.1);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .customer-header-text h2 {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .customer-header-text p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 35px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 5px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-card h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-card h3 i {
+            color: var(--primary);
+        }
+
+        .service-card ul {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        .service-card li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .service-card li:last-child {
+            border-bottom: none;
+        }
+
+        .service-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Comparison Table */
+        .comparison-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(0, 48, 73, 0.03), rgba(0, 48, 73, 0.08));
+        }
+
+        .comparison-table {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-top: 50px;
+        }
+
+        .table-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .table-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 25px;
+            border-bottom: 1px solid var(--light-gray);
+            align-items: center;
+        }
+
+        .table-row:nth-child(even) {
+            background-color: var(--light);
+        }
+
+        .table-row:last-child {
+            border-bottom: none;
+        }
+
+        .table-row div {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .feature-name {
+            font-weight: 600;
+            color: var(--secondary);
+            text-align: left !important;
+        }
+
+        /* Advantages Section */
+        .advantages-section {
+            padding: 100px 0;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            margin-top: 60px;
+        }
+
+        .advantage-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 35px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .advantage-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--primary);
+        }
+
+        .advantage-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+
+        .advantage-card h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            padding: 100px 0;
+            background-color: var(--light);
+        }
+
+        .testimonial-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-card:before {
+            content: '"';
+            font-size: 6rem;
+            color: var(--light-gray);
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 20px;
+        }
+
+        .author-info h4 {
+            color: var(--secondary);
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .author-info p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-rating {
+            color: var(--accent);
+            margin-top: 5px;
+        }
+
+        /* CTA Sections */
+        .cta-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .cta-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary);
+        }
+
+        .cta-box h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .cta-contact {
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+
+        .cta-contact p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cta-contact i {
+            color: var(--primary);
+        }
+
+        /* Certifications */
+        .certifications-section {
+            padding: 80px 0;
+            background: linear-gradient(rgba(0, 48, 73, 0.05), rgba(0, 48, 73, 0.1));
+            text-align: center;
+        }
+
+        .certifications-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .certification-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            min-width: 200px;
+            transition: var(--transition);
+        }
+
+        .certification-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .certification-item i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .certification-item h4 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        /* States Grid */
+        .states-section {
+            padding: 80px 0;
+        }
+
+        .states-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .state-link {
+            display: block;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+        }
+
+        .state-link:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+            border-color: var(--primary);
+        }
+
+        .state-link i {
+            margin-right: 8px;
+            color: var(--accent);
+        }
+
+        .state-link:hover i {
+            color: white;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            padding: 120px 0;
+            background: linear-gradient(rgba(0, 48, 73, 0.95), rgba(0, 48, 73, 0.92)), url('https://images.unsplash.com/photo-1563720223485-8d6d5c5c8d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 25px;
+            font-weight: 900;
+        }
+
+        .final-cta p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(230, 57, 70, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-section h4:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        .footer-links {
+            list-style-type: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 8px;
+        }
+
+        .footer-links a i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 15px;
+            color: var(--accent);
+            width: 20px;
+        }
+
+        .footer-newsletter input {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-newsletter button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .footer-newsletter button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            body {
+                padding-top: 120px;
+            }
+            
+            .sticky-quote-btn.show {
+                top: 70px;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 120px;
+                left: -100%;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                width: 100%;
+            }
+            
+            .nav-menu a {
+                padding: 15px 30px;
+                border-bottom: 1px solid var(--light-gray);
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-split {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 110px;
+            }
+            
+            .header-top .container {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .customer-type-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .states-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            }
+            
+            .table-header, .table-row {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .feature-name {
+                text-align: center !important;
+                font-weight: 700;
+                background-color: var(--light);
+                padding: 15px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Get Quote Button -->
+    <div class="sticky-quote-btn" id="stickyQuoteBtn">
+        <div class="container">
+            <p><i class="fas fa-bolt"></i> Need car shipping? Get your FREE, no-obligation quote now!</p>
+            <a href="#quoteForm" class="sticky-btn">
+                <i class="fas fa-calculator"></i> GET FREE QUOTE
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55</span>
+                    <span><i class="fas fa-envelope"></i> quotes@okcarshipping.com</span>
+                    <span><i class="fas fa-clock"></i> Mon-Sun 8AM-8PM EST</span>
+                </div>
+                <div class="header-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container header-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>OK <span>Car Shipping</span> LLC</h1>
+                        <p>America's Trusted Auto Transport Company</p>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html" class="active">Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#quoteForm" class="nav-cta-btn">
+                            <i class="fas fa-calculator"></i> GET QUOTE
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Auto Transport Services for Dealers & Private Customers</h1>
+            <p>Professional car shipping solutions tailored for individuals, families, and automotive businesses nationwide. Open & enclosed transport, door-to-door service, and reliable logistics.</p>
+            
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="services.html">Services</a>
+                <span>/</span>
+                <span>Dealers & Private Customers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 1: Private Customers -->
+    <section class="customer-type-section">
+        <div class="container">
+            <div class="customer-type-header">
+                <div class="customer-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="customer-header-text">
+                    <h2>Auto Transport Services for Private Customers</h2>
+                    <p>Reliable, affordable car shipping for individuals and families with door-to-door convenience and complete peace of mind.</p>
+                </div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-route"></i> Cross-Country Car Shipping</h3>
+                    <p>Long-distance auto transport for interstate moves, job transfers, and major relocations across all 50 states.</p>
+                    <ul>
+                        <li>Cross-country vehicle shipping with door-to-door service</li>
+                        <li>State-to-state auto transport for job and family moves</li>
+                        <li>Affordable long-distance car shipping rates</li>
+                        <li>Flexible scheduling for personal timelines</li>
+                        <li>Real-time tracking throughout transport</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-car"></i> Vehicle Purchase & Sale Transport</h3>
+                    <p>Secure shipping for vehicles purchased online or through private sales across state lines.</p>
+                    <ul>
+                        <li>Car shipping for online vehicle purchases (eBay, Carvana)</li>
+                        <li>Transport for private party sales and purchases</li>
+                        <li>New car transport from out-of-state dealerships</li>
+                        <li>Secure vehicle shipping for valuable purchases</li>
+                        <li>Fast delivery to secure your new vehicle</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-star"></i> Specialty Vehicle Transport</h3>
+                    <p>Expert handling for luxury, classic, exotic, and unique vehicles requiring special care.</p>
+                    <ul>
+                        <li>Enclosed car transport for luxury and classic vehicles</li>
+                        <li>Motorcycle shipping with specialized crating</li>
+                        <li>RV transport and boat shipping with proper equipment</li>
+                        <li>Classic car transport for shows and collections</li>
+                        <li>Electric vehicle shipping with proper protocols</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-sun"></i> Seasonal & Lifestyle Shipping</h3>
+                    <p>Vehicle relocation for seasonal residents, college students, and lifestyle changes.</p>
+                    <ul>
+                        <li>Snowbird auto transport for seasonal residents</li>
+                        <li>College student car shipping for semester moves</li>
+                        <li>Winter car shipping with weather-appropriate carriers</li>
+                        <li>Summer vehicle relocation for vacation homes</li>
+                        <li>Retirement relocation vehicle transport</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-flag-usa"></i> Military & Government Transport</h3>
+                    <p>Specialized services for military personnel, government employees, and civil service relocations.</p>
+                    <ul>
+                        <li>PCS car shipping for military personnel</li>
+                        <li>Government vehicle transport for civil service</li>
+                        <li>Military discount car shipping programs</li>
+                        <li>DITY move assistance for military families</li>
+                        <li>Base-to-base vehicle transportation</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-shield-alt"></i> Peace of Mind Guarantee</h3>
+                    <p>Complete protection and support throughout your auto transport experience.</p>
+                    <ul>
+                        <li>Fully insured auto transport on every shipment</li>
+                        <li>24/7 customer support and real-time tracking</li>
+                        <li>No hidden fees with transparent pricing</li>
+                        <li>Door-to-door convenience with flexible scheduling</li>
+                        <li>Comprehensive vehicle inspection process</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 2: Dealers & Businesses -->
+    <section class="customer-type-section">
+        <div class="container">
+            <div class="customer-type-header">
+                <div class="customer-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="customer-header-text">
+                    <h2>Auto Transport Services for Car Dealers & Businesses</h2>
+                    <p>Professional vehicle transport solutions for dealerships, auctions, manufacturers, and automotive businesses nationwide.</p>
+                </div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-exchange-alt"></i> Dealer-to-Dealer Vehicle Transport</h3>
+                    <p>Efficient transportation between franchises, locations, and trading partners.</p>
+                    <ul>
+                        <li>Dealer trade-in vehicle transport between franchises</li>
+                        <li>Auction-to-dealer auto shipping for purchased units</li>
+                        <li>New car transport from manufacturers to dealerships</li>
+                        <li>Used vehicle shipping between multiple locations</li>
+                        <li>Inventory redistribution and balancing services</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-gavel"></i> Auction Vehicle Transport</h3>
+                    <p>Reliable shipping from major auctions to your dealership with timely delivery.</p>
+                    <ul>
+                        <li>Transport from major auctions (Manheim, ADESA, etc.)</li>
+                        <li>Multi-vehicle shipping for auction purchases</li>
+                        <li>Timely delivery to meet sale and listing deadlines</li>
+                        <li>Condition-appropriate transport for various vehicles</li>
+                        <li>Auction pickup coordination and scheduling</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-industry"></i> Manufacturer & Distributor Services</h3>
+                    <p>Transport solutions for manufacturers, distributors, and factory programs.</p>
+                    <ul>
+                        <li>Factory to dealership transport for new inventory</li>
+                        <li>Test vehicle shipping for manufacturer programs</li>
+                        <li>Recall vehicle transport to service centers</li>
+                        <li>Press fleet shipping for media events and launches</li>
+                        <li>Prototype and pre-production vehicle transport</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-truck-fleet"></i> Fleet & Corporate Vehicle Transport</h3>
+                    <p>Business transportation solutions for corporate fleets and employee vehicles.</p>
+                    <ul>
+                        <li>Corporate auto relocation for employee transfers</li>
+                        <li>Fleet vehicle transport for company vehicles</li>
+                        <li>Business vehicle shipping for acquisitions</li>
+                        <li>Multi-car discounts for volume shipments</li>
+                        <li>Regular route scheduling for predictable logistics</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-crown"></i> Luxury & High-Value Vehicle Transport</h3>
+                    <p>Premium transport services for luxury dealerships and high-value inventory.</p>
+                    <ul>
+                        <li>Luxury car transport for high-end dealerships</li>
+                        <li>Exotic vehicle shipping for specialty dealers</li>
+                        <li>Classic car transport for collector dealerships</li>
+                        <li>Enclosed transport for premium inventory protection</li>
+                        <li>White-glove service with extra care handling</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><i class="fas fa-chart-line"></i> Business Advantage Features</h3>
+                    <p>Specialized services and benefits designed for automotive businesses.</p>
+                    <ul>
+                        <li>Volume discounts and customized pricing agreements</li>
+                        <li>Dedicated account manager and priority scheduling</li>
+                        <li>Extended business hours for auction coordination</li>
+                        <li>Digital paperwork and custom reporting</li>
+                        <li>Commercial insurance with higher liability limits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Private vs Dealer Auto Transport Comparison</h2>
+                <p>See how our services are tailored to meet the unique needs of different customers</p>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="table-header">
+                    <div>Feature</div>
+                    <div>Private Customers</div>
+                    <div>Dealers & Businesses</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-name">Pricing Structure</div>
+                    <div>Competitive market rates, individual discounts available</div>
+                    <div>Volume discounts, fleet pricing, customized agreements</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-name">Scheduling</div>
+                    <div>Flexible dates, door-to-door convenience, personal timeline</div>
+                    <div>Priority scheduling, guaranteed pickup times, business hours</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-name">Communication</div>
+                    <div>Personal coordinator, regular updates, 24/7 support</div>
+                    <div>Dedicated account manager, business support, extended hours</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-name">Documentation</div>
+                    <div>Simple booking process, digital paperwork, personal records</div>
+                    <div>Custom reporting, bulk processing, digital records, business docs</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-name">Insurance Coverage</div>
+                    <div>Comprehensive personal coverage, clear claims process</div>
+                    <div>Commercial insurance, higher liability limits, business protection</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-name">Volume Capacity</div>
+                    <div>Single or multiple personal vehicles</div>
+                    <div>High-volume capacity, regular routes, fleet transport</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-name">Special Requirements</div>
+                    <div>Personal belongings removal, alarm instructions, personal care</div>
+                    <div>Inventory tracking, condition reports, business documentation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>The OK Car Shipping Advantage</h2>
+                <p>Why thousands of customers trust us for their auto transport needs</p>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>A+ BBB Rating</h3>
+                    <p>Highest rating from Better Business Bureau with thousands of satisfied customers and positive reviews.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Fully Licensed & Insured</h3>
+                    <p>FMCSA licensed auto transport broker with comprehensive insurance on every shipment for complete protection.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden fees or surprise charges. Get accurate quotes with upfront pricing and competitive rates.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer support available around the clock with real-time tracking and constant communication.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Door-to-Door Service</h3>
+                    <p>Convenient pickup and delivery at locations you specify for a hassle-free auto transport experience.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Nationwide Network</h3>
+                    <p>Access to thousands of vetted carriers across all 50 states for faster pickup times and reliable service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>Real testimonials from private customers and automotive businesses</p>
+            </div>
+            
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "I needed to ship my car from California to New York for a job transfer. OK Car Shipping provided door-to-door service with excellent communication throughout. The price was exactly as quoted, and my car arrived on time and in perfect condition. Highly recommended for anyone needing reliable auto transport!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <h4>Jessica M.</h4>
+                            <p>Private Customer - California to New York Move</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "As a used car dealership, we ship 20-30 vehicles monthly from auctions across the country. OK Car Shipping has been our reliable partner for three years. Their volume pricing is competitive, their pickup times are consistent, and their condition reports are thorough. They truly understand the needs of automotive businesses."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RT</div>
+                        <div class="author-info">
+                            <h4>Robert T.</h4>
+                            <p>Auto Dealership Owner - Business Customer</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-split" style="margin-top: 80px;">
+                <div class="cta-box">
+                    <h3>For Private Customers</h3>
+                    <p>Get your free, no-obligation quote for personal vehicle transport.</p>
+                    <div class="cta-contact">
+                        <p><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55</p>
+                        <p><i class="fas fa-envelope"></i> quotes@okcarshipping.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 8AM-9PM EST</p>
+                    </div>
+                    <a href="#quoteForm" class="btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-calculator"></i> GET PRIVATE QUOTE
+                    </a>
+                </div>
+                
+                <div class="cta-box">
+                    <h3>For Dealers & Businesses</h3>
+                    <p>Contact our dealer department for business pricing and services.</p>
+                    <div class="cta-contact">
+                        <p><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55 (Press 2)</p>
+                        <p><i class="fas fa-envelope"></i> dealers@okcarshipping.com</p>
+                        <p><i class="fas fa-clock"></i> Extended Business Hours</p>
+                    </div>
+                    <a href="#quoteForm" class="btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-building"></i> CONTACT DEALER DEPT
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Industry Certifications & Trust Indicators</h2>
+                <p>Fully licensed, insured, and compliant with all industry standards</p>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <i class="fas fa-file-contract"></i>
+                    <h4>FMCSA Licensed</h4>
+                    <p>Fully licensed auto transport broker</p>
+                </div>
+                
+                <div class="certification-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>A+ BBB Rating</h4>
+                    <p>Highest rating from Better Business Bureau</p>
+                </div>
+                
+                <div class="certification-item">
+                    <i class="fas fa-truck"></i>
+                    <h4>DOT Registered</h4>
+                    <p>Department of Transportation registered</p>
+                </div>
+                
+                <div class="certification-item">
+                    <i class="fas fa-user-check"></i>
+                    <h4>Fully Insured</h4>
+                    <p>Comprehensive insurance coverage</p>
+                </div>
+                
+                <div class="certification-item">
+                    <i class="fas fa-handshake"></i>
+                    <h4>Industry Member</h4>
+                    <p>Active industry association member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- States Served -->
+    <section class="states-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nationwide Coverage</h2>
+                <p>We provide auto transport services to all 50 states with local expertise</p>
+            </div>
+            
+            <div class="states-grid">
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Alabama</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Alaska</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Arizona</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Arkansas</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> California</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Colorado</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Connecticut</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Delaware</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Florida</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Georgia</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Hawaii</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Idaho</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Illinois</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Indiana</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Iowa</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Kansas</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Kentucky</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Louisiana</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Maine</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Maryland</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Massachusetts</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Michigan</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Minnesota</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Mississippi</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Missouri</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Montana</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Nebraska</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Nevada</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> New Hampshire</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> New Jersey</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> New Mexico</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> New York</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> North Carolina</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> North Dakota</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Ohio</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Oklahoma</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Oregon</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Pennsylvania</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Rhode Island</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> South Carolina</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> South Dakota</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Tennessee</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Texas</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Utah</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Vermont</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Virginia</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Washington</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> West Virginia</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Wisconsin</a>
+                <a href="#" class="state-link"><i class="fas fa-map-marker-alt"></i> Wyoming</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="quoteForm">
+        <div class="container">
+            <h2>Ready to Ship Your Vehicle?</h2>
+            <p>Whether you're a private customer shipping one vehicle or a business moving multiple units, OK Car Shipping LLC provides professional, reliable, and affordable auto transport services tailored to your needs.</p>
+            
+            <div class="cta-buttons">
+                <a href="tel:1-800-OK-CAR-55" class="btn-primary">
+                    <i class="fas fa-phone-alt"></i> CALL NOW: 1-800-OK-CAR-55
+                </a>
+                <a href="get-quote.html" class="btn-secondary">
+                    <i class="fas fa-calculator"></i> ONLINE QUOTE FORM
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OK Car Shipping LLC</h4>
+                    <p>Your trusted auto transport partner for dealers and private customers nationwide.</p>
+                    <div class="contact-info" style="margin-top: 20px;">
+                        <p><i class="fas fa-map-marker-alt"></i> Nationwide Service Across USA</p>
+                        <p><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55</p>
+                        <p><i class="fas fa-envelope"></i> quotes@okcarshipping.com</p>
+                        <p><i class="fas fa-envelope"></i> dealers@okcarshipping.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="fas fa-user"></i> Private Customer Transport</a></li>
+                        <li><a href="services.html"><i class="fas fa-building"></i> Dealer & Business Transport</a></li>
+                        <li><a href="services.html"><i class="fas fa-truck-loading"></i> Open Car Transport</a></li>
+                        <li><a href="services.html"><i class="fas fa-truck-moving"></i> Enclosed Transport</a></li>
+                        <li><a href="services.html"><i class="fas fa-motorcycle"></i> Motorcycle Shipping</a></li>
+                        <li><a href="services.html"><i class="fas fa-car"></i> Classic Car Transport</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fas fa-truck-moving"></i> Services</a></li>
+                        <li><a href="how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="get-quote.html"><i class="fas fa-calculator"></i> Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for auto transport tips and exclusive offers.</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <div class="header-social" style="margin-top: 20px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> OK Car Shipping LLC. All rights reserved. | FMCSA Licensed Broker | DOT Registered | MC# 123456</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">Professional auto transport services for dealers and private customers nationwide. Fully licensed, insured, and compliant with all industry standards.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Sticky button functionality
+        const stickyBtn = document.getElementById('stickyQuoteBtn');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show/hide sticky button based on scroll position
+            if (scrollTop > 400) {
+                stickyBtn.classList.add('show');
+            } else {
+                stickyBtn.classList.remove('show');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    
+                    // Account for sticky header height
+                    const offset = 100;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without jumping
+                    if (targetId !== '#quoteForm') {
+                        history.pushState(null, null, targetId);
+                    }
+                }
+            });
+        });
+        
+        // Add hover effect to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // State link interaction
+        document.querySelectorAll('.state-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const state = this.textContent.replace('✓ ', '');
+                alert(`You selected ${state}. In a live site, this would link to state-specific services for ${state}.`);
+            });
+        });
+    </script>
+</body>
+</html>

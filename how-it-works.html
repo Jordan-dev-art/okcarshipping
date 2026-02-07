@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Car Shipping Works | Step-by-Step Auto Transport Guide | OK Car Shipping LLC</title>
+    <meta name="description" content="Complete guide to how car shipping works. Learn the 5-step auto transport process, get shipping tips, understand costs, and prepare your vehicle. Free quotes available.">
+    <meta name="keywords" content="how car shipping works, auto transport process, car shipping guide, vehicle shipping steps, how to ship a car, car transport process, car shipping timeline, preparing car for shipping, car shipping costs, auto shipping quote, car shipping checklist">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #e63946;
+            --primary-dark: #c1121f;
+            --secondary: #003049;
+            --accent: #f77f00;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #fff;
+            padding-top: 130px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Sticky Get Quote Button */
+        .sticky-quote-btn {
+            position: fixed;
+            top: -80px;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 9999;
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .sticky-quote-btn.show {
+            top: 80px;
+        }
+
+        .sticky-quote-btn .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sticky-quote-btn p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .sticky-btn {
+            background-color: white;
+            color: var(--primary);
+            border: none;
+            border-radius: 4px;
+            padding: 10px 25px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .sticky-btn:hover {
+            background-color: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header-top {
+            background-color: var(--secondary);
+            color: white;
+            padding: 8px 0;
+        }
+
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        .header-contact span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .header-contact i {
+            color: var(--accent);
+        }
+
+        .header-social a {
+            color: white;
+            margin-left: 15px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .header-social a:hover {
+            color: var(--accent);
+        }
+
+        .header-main {
+            padding: 15px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-right: 12px;
+        }
+
+        .logo-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.9rem;
+            color: var(--secondary);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        .logo-text p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu a {
+            color: var(--dark);
+            text-decoration: none;
+            padding: 10px 18px;
+            font-weight: 500;
+            transition: var(--transition);
+            display: block;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .nav-menu a.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .nav-cta {
+            margin-left: 20px;
+        }
+
+        .nav-cta-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-cta-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 48, 73, 0.92), rgba(0, 48, 73, 0.88)), url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 90px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 900px;
+            margin: 0 auto 35px;
+            opacity: 0.9;
+        }
+
+        .breadcrumb {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            opacity: 0.7;
+        }
+
+        /* Content Layout */
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 50px;
+            padding: 0 0 100px;
+        }
+
+        @media (max-width: 992px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Main Content */
+        .main-content {
+            padding-right: 20px;
+        }
+
+        .section-title {
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            color: var(--secondary);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 5px;
+            background-color: var(--primary);
+            bottom: -15px;
+            left: 0;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        /* Process Steps */
+        .process-timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 60px 0;
+        }
+
+        .process-timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: var(--light-gray);
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 80px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 35px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--primary);
+        }
+
+        .process-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            position: absolute;
+            left: -45px;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 20px;
+        }
+
+        .step-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            background-color: rgba(230, 57, 70, 0.1);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step-header-text h3 {
+            color: var(--secondary);
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .step-subtitle {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        .step-content h4 {
+            color: var(--secondary);
+            margin: 25px 0 15px;
+            font-size: 1.4rem;
+        }
+
+        .step-content ul {
+            list-style-type: none;
+            margin: 20px 0;
+        }
+
+        .step-content li {
+            padding: 12px 0 12px 35px;
+            position: relative;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .step-content li:last-child {
+            border-bottom: none;
+        }
+
+        .step-content li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .tip-box {
+            background-color: #e7f5ff;
+            border-left: 4px solid var(--secondary);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .tip-box h5 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box h5 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Timeline Info Boxes */
+        .timeline-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .info-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .info-card h4 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 150px;
+            height: fit-content;
+        }
+
+        .sidebar-widget {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .sidebar-widget h3 {
+            color: var(--secondary);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        /* Quick Links */
+        .quick-links {
+            list-style-type: none;
+        }
+
+        .quick-links li {
+            margin-bottom: 15px;
+        }
+
+        .quick-links a {
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            transition: var(--transition);
+            border-left: 4px solid transparent;
+        }
+
+        .quick-links a:hover {
+            background-color: var(--light);
+            border-left-color: var(--primary);
+            padding-left: 20px;
+        }
+
+        .quick-links i {
+            color: var(--primary);
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Quote Form */
+        .quote-form-container {
+            background: linear-gradient(to bottom, var(--secondary), #002538);
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .form-header {
+            background-color: var(--primary);
+            padding: 25px;
+            text-align: center;
+        }
+
+        .form-header h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+        }
+
+        .form-content {
+            padding: 30px;
+        }
+
+        .quote-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .quote-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .quote-form input,
+        .quote-form select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: var(--transition);
+        }
+
+        .quote-form input:focus,
+        .quote-form select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.2);
+        }
+
+        .quote-form input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 15px rgba(230, 57, 70, 0.3);
+        }
+
+        .submit-btn i {
+            margin-right: 8px;
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-note i {
+            color: var(--accent);
+            margin-right: 5px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        .faq-question i {
+            transition: var(--transition);
+        }
+
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-answer.active {
+            padding: 0 30px 30px;
+            max-height: 500px;
+        }
+
+        /* Checklist Section */
+        .checklist-section {
+            padding: 80px 0;
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .checklist-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 35px;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary);
+        }
+
+        .checklist-card h3 {
+            color: var(--secondary);
+            margin-bottom: 25px;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .checklist-card h3 i {
+            color: var(--primary);
+        }
+
+        .checklist-card ul {
+            list-style-type: none;
+        }
+
+        .checklist-card li {
+            padding: 12px 0 12px 35px;
+            position: relative;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .checklist-card li:last-child {
+            border-bottom: none;
+        }
+
+        .checklist-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(0, 48, 73, 0.95), rgba(0, 48, 73, 0.92)), url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 25px;
+            font-weight: 900;
+        }
+
+        .cta-section p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(230, 57, 70, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-section h4:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        .footer-links {
+            list-style-type: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 8px;
+        }
+
+        .footer-links a i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 15px;
+            color: var(--accent);
+            width: 20px;
+        }
+
+        .footer-newsletter input {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-newsletter button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .footer-newsletter button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            body {
+                padding-top: 120px;
+            }
+            
+            .sticky-quote-btn.show {
+                top: 70px;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 120px;
+                left: -100%;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                width: 100%;
+            }
+            
+            .nav-menu a {
+                padding: 15px 30px;
+                border-bottom: 1px solid var(--light-gray);
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .main-content {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 110px;
+            }
+            
+            .header-top .container {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .step-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .step-header-text {
+                text-align: center;
+            }
+            
+            .process-timeline {
+                padding-left: 0;
+            }
+            
+            .process-timeline:before {
+                display: none;
+            }
+            
+            .step-number {
+                position: relative;
+                left: 0;
+                margin-bottom: 20px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Get Quote Button -->
+    <div class="sticky-quote-btn" id="stickyQuoteBtn">
+        <div class="container">
+            <p><i class="fas fa-bolt"></i> Ready to ship your car? Get your FREE quote now!</p>
+            <a href="#quoteForm" class="sticky-btn">
+                <i class="fas fa-calculator"></i> GET FREE QUOTE
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55</span>
+                    <span><i class="fas fa-envelope"></i> quotes@okcarshipping.com</span>
+                    <span><i class="fas fa-clock"></i> Mon-Sun 8AM-8PM EST</span>
+                </div>
+                <div class="header-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container header-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>OK <span>Car Shipping</span> LLC</h1>
+                        <p>America's Trusted Auto Transport Company</p>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html" class="active">How It Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#quoteForm" class="nav-cta-btn">
+                            <i class="fas fa-calculator"></i> GET QUOTE
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>How Car Shipping Works: Complete Auto Transport Guide</h1>
+            <p>Your step-by-step guide to understanding the car shipping process, from getting a quote to vehicle delivery. Learn how to prepare your vehicle, understand costs, and ensure a smooth auto transport experience.</p>
+            
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="how-it-works.html">How It Works</a>
+                <span>/</span>
+                <span>Complete Guide</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Introduction -->
+                <section class="section-title">
+                    <h2>The Complete Car Shipping Process</h2>
+                    <p>Understanding how auto transport works can make your vehicle shipping experience stress-free and efficient. This comprehensive guide walks you through each step of the process, from initial quote to final delivery.</p>
+                </section>
+
+                <!-- Process Timeline -->
+                <div class="process-timeline">
+                    
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="step-header-text">
+                                <h3>Get Your Free Quote</h3>
+                                <p class="step-subtitle">Request an accurate, no-obligation car shipping estimate</p>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <p>The first step in the <strong>auto transport process</strong> is getting a <strong>free car shipping quote</strong>. This gives you an accurate estimate of what it will cost to <strong>ship your car</strong> based on several key factors.</p>
+                            
+                            <h4>What Affects Car Shipping Costs?</h4>
+                            <ul>
+                                <li><strong>Distance:</strong> Longer distances typically cost less per mile than shorter trips</li>
+                                <li><strong>Vehicle Size:</strong> Larger vehicles (SUVs, trucks) may cost more than compact cars</li>
+                                <li><strong>Transport Type:</strong> <strong>Open car transport</strong> is more affordable than <strong>enclosed auto transport</strong></li>
+                                <li><strong>Seasonality:</strong> Prices may be higher during peak moving seasons (summer, holidays)</li>
+                                <li><strong>Route Popularity:</strong> Popular routes often have more competitive pricing</li>
+                                <li><strong>Vehicle Condition:</strong> Running vs. non-running vehicles affect transport method</li>
+                            </ul>
+                            
+                            <div class="tip-box">
+                                <h5><i class="fas fa-lightbulb"></i> Pro Tip: Get Multiple Quotes</h5>
+                                <p>While we're confident in our competitive pricing, it's always smart to compare quotes from multiple <strong>auto transport companies</strong>. Look for transparency, no hidden fees, and clear explanations of what's included.</p>
+                            </div>
+                            
+                            <h4>How to Get an Accurate Quote</h4>
+                            <p>For the most accurate <strong>auto shipping quote</strong>, be prepared with:</p>
+                            <ul>
+                                <li>Pickup and delivery ZIP codes</li>
+                                <li>Vehicle make, model, and year</li>
+                                <li>Vehicle condition (running or non-operational)</li>
+                                <li>Preferred transport type (open or enclosed)</li>
+                                <li>Desired pickup timeframe</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="step-header-text">
+                                <h3>Schedule & Book Your Shipment</h3>
+                                <p class="step-subtitle">Secure your spot and choose your preferred dates</p>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <p>Once you've reviewed your <strong>car shipping quote</strong> and decided to proceed, the next step is to schedule and book your shipment.</p>
+                            
+                            <h4>Booking Process Details</h4>
+                            <ul>
+                                <li><strong>Choose Your Dates:</strong> Select your preferred pickup window (typically 1-3 days)</li>
+                                <li><strong>Select Transport Type:</strong> Decide between <strong>open transport</strong> (most common) or <strong>enclosed transport</strong> (for luxury/classic cars)</li>
+                                <li><strong>Payment Terms:</strong> Most companies require a deposit to secure your booking</li>
+                                <li><strong>Paperwork:</strong> Complete necessary documentation including the bill of lading</li>
+                                <li><strong>Contact Information:</strong> Provide accurate phone numbers for pickup and delivery coordination</li>
+                            </ul>
+                            
+                            <div class="warning-box">
+                                <h5><i class="fas fa-exclamation-triangle"></i> Important: Booking Lead Time</h5>
+                                <p>The <strong>car shipping timeline</strong> varies by season. For best results and optimal pricing, book your shipment at least 1-2 weeks in advance. During peak seasons (summer, holidays), book 3-4 weeks ahead.</p>
+                            </div>
+                            
+                            <h4>What Happens After Booking?</h4>
+                            <p>Once your <strong>auto transport</strong> is booked:</p>
+                            <ul>
+                                <li>You'll receive a confirmation with all details</li>
+                                <li>Your shipment is added to our carrier network</li>
+                                <li>We match your vehicle with an appropriate carrier</li>
+                                <li>You'll be assigned a dedicated transport coordinator</li>
+                                <li>You'll receive carrier information as soon as it's assigned</li>
+                            </ul>
+                            
+                            <!-- Timeline Info Boxes -->
+                            <div class="timeline-info">
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <h4>Booking Lead Time</h4>
+                                    <p>1-4 weeks depending on season and route</p>
+                                </div>
+                                
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <h4>Pickup Window</h4>
+                                    <p>Typically 1-3 day windows for flexibility</p>
+                                </div>
+                                
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-file-contract"></i>
+                                    </div>
+                                    <h4>Paperwork</h4>
+                                    <p>Bill of lading and vehicle inspection report</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <i class="fas fa-truck-loading"></i>
+                            </div>
+                            <div class="step-header-text">
+                                <h3>Vehicle Pickup & Inspection</h3>
+                                <p class="step-subtitle">Professional pickup with thorough documentation</p>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <p>This is when the actual <strong>vehicle shipping</strong> begins. The carrier arrives at your specified pickup location to load your vehicle.</p>
+                            
+                            <h4>Pickup Day Process</h4>
+                            <ul>
+                                <li><strong>Carrier Contact:</strong> The driver will call you 24-48 hours before pickup to confirm</li>
+                                <li><strong>Vehicle Inspection:</strong> A thorough inspection is conducted before loading</li>
+                                <li><strong>Documentation:</strong> The bill of lading is completed and signed by both parties</li>
+                                <li><strong>Loading:</strong> Your vehicle is safely loaded onto the carrier using proper equipment</li>
+                                <li><strong>Final Confirmation:</strong> You'll receive confirmation that your vehicle is en route</li>
+                            </ul>
+                            
+                            <h4>Vehicle Inspection Checklist</h4>
+                            <p>The carrier will document the condition of your vehicle, including:</p>
+                            <ul>
+                                <li>Existing scratches, dents, or damage</li>
+                                <li>Tire condition and tread depth</li>
+                                <li>Glass condition (windows, windshield)</li>
+                                <li>Interior condition (seats, dashboard)</li>
+                                <li>Mileage at time of pickup</li>
+                                <li>Special features or modifications</li>
+                            </ul>
+                            
+                            <div class="tip-box">
+                                <h5><i class="fas fa-lightbulb"></i> Pro Tip: Document Everything</h5>
+                                <p>Take your own photos and videos of your vehicle before pickup. Document any existing damage from multiple angles. This provides additional protection and ensures a smooth claims process if needed.</p>
+                            </div>
+                            
+                            <h4>What to Have Ready at Pickup</h4>
+                            <ul>
+                                <li>Vehicle keys (provide all sets if possible)</li>
+                                <li>Valid identification</li>
+                                <li>Vehicle registration (some carriers require it)</li>
+                                <li>Personal items removed from the vehicle</li>
+                                <li>Contact information for the driver</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="step-header-text">
+                                <h3>In-Transit & Tracking</h3>
+                                <p class="step-subtitle">Monitor your shipment in real-time</p>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <p>Once your vehicle is loaded and en route, you can track its progress throughout the <strong>auto transport journey</strong>.</p>
+                            
+                            <h4>What to Expect During Transit</h4>
+                            <ul>
+                                <li><strong>Transit Times:</strong> Vary by distance (see timeline chart below)</li>
+                                <li><strong>Communication:</strong> Regular updates from your transport coordinator</li>
+                                <li><strong>Tracking:</strong> Real-time tracking available through our online portal</li>
+                                <li><strong>Safety:</strong> Your vehicle is secured with professional equipment</li>
+                                <li><strong>Insurance:</strong> Fully covered throughout the entire journey</li>
+                            </ul>
+                            
+                            <h4>Average Transit Times by Distance</h4>
+                            <div class="timeline-info">
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-road"></i>
+                                    </div>
+                                    <h4>Short Distance</h4>
+                                    <p>Under 500 miles: 2-4 days</p>
+                                </div>
+                                
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-route"></i>
+                                    </div>
+                                    <h4>Medium Distance</h4>
+                                    <p>500-1,500 miles: 5-7 days</p>
+                                </div>
+                                
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-globe-americas"></i>
+                                    </div>
+                                    <h4>Cross-Country</h4>
+                                    <p>1,500+ miles: 7-14 days</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Factors Affecting Transit Time</h4>
+                            <ul>
+                                <li><strong>Weather Conditions:</strong> Severe weather can cause delays</li>
+                                <li><strong>Traffic & Road Conditions:</strong> Construction and accidents affect timing</li>
+                                <li><strong>Carrier Route:</strong> Some carriers make multiple stops</li>
+                                <li><strong>Pickup/Delivery Locations:</strong> Urban vs. rural areas affect scheduling</li>
+                                <li><strong>Time of Year:</strong> Peak seasons may have longer transit times</li>
+                            </ul>
+                            
+                            <div class="tip-box">
+                                <h5><i class="fas fa-lightbulb"></i> Pro Tip: Stay Flexible</h5>
+                                <p>While we provide estimated delivery dates, <strong>car shipping timelines</strong> can vary due to factors beyond our control. Allow a few days of flexibility in your schedule, especially for long-distance moves.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="step-header-text">
+                                <h3>Vehicle Delivery & Inspection</h3>
+                                <p class="step-subtitle">Safe delivery and final paperwork</p>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <p>The final step in the <strong>car shipping process</strong> is the safe delivery of your vehicle to its destination.</p>
+                            
+                            <h4>Delivery Day Process</h4>
+                            <ul>
+                                <li><strong>Advance Notice:</strong> The driver will call 24-48 hours before delivery</li>
+                                <li><strong>Final Arrival:</strong> Driver arrives at the specified delivery location</li>
+                                <li><strong>Vehicle Unloading:</strong> Safe unloading with proper equipment</li>
+                                <li><strong>Final Inspection:</strong> Thorough inspection comparing to pickup condition</li>
+                                <li><strong>Paperwork Completion:</strong> Signing of final documents and bill of lading</li>
+                                <li><strong>Payment:</strong> Final payment (if balance remains)</li>
+                                <li><strong>Keys & Documents:</strong> Return of keys and all paperwork</li>
+                            </ul>
+                            
+                            <h4>Delivery Inspection Checklist</h4>
+                            <p>Before accepting delivery, carefully inspect:</p>
+                            <ul>
+                                <li>Compare condition to pickup inspection report</li>
+                                <li>Check for any new damage or issues</li>
+                                <li>Verify mileage matches or is reasonable for distance</li>
+                                <li>Test that all features and functions work</li>
+                                <li>Ensure personal items (if any were left) are still present</li>
+                                <li>Confirm the vehicle starts and runs properly</li>
+                            </ul>
+                            
+                            <div class="warning-box">
+                                <h5><i class="fas fa-exclamation-triangle"></i> Important: Don't Sign Until Satisfied</h5>
+                                <p>Never sign the delivery receipt until you've completed a thorough inspection. Once you sign, you're acknowledging the vehicle was delivered in the condition described. If there are issues, note them on the bill of lading before signing.</p>
+                            </div>
+                            
+                            <h4>After Delivery</h4>
+                            <ul>
+                                <li>Keep all paperwork for your records</li>
+                                <li>Provide feedback about your experience</li>
+                                <li>Consider leaving a review to help future customers</li>
+                                <li>Contact us with any post-delivery questions</li>
+                                <li>File a claim immediately if you discover damage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checklist Section -->
+                <section class="checklist-section">
+                    <div class="section-title">
+                        <h2>Car Shipping Preparation Checklist</h2>
+                        <p>Proper preparation ensures a smooth auto transport experience</p>
+                    </div>
+                    
+                    <div class="checklist-grid">
+                        <div class="checklist-card">
+                            <h3><i class="fas fa-car"></i> Vehicle Preparation</h3>
+                            <ul>
+                                <li>Wash your vehicle for easier inspection</li>
+                                <li>Take photos from all angles before pickup</li>
+                                <li>Check tire pressure and inflate as needed</li>
+                                <li>Ensure brakes are in working order</li>
+                                <li>Test that all lights are functioning</li>
+                                <li>Check and top off fluid levels</li>
+                                <li>Address any fluid leaks before shipping</li>
+                                <li>Remove custom accessories if possible</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="checklist-card">
+                            <h3><i class="fas fa-box"></i> Personal Belongings</h3>
+                            <ul>
+                                <li>Remove ALL personal items from the vehicle</li>
+                                <li>Empty glove compartment and center console</li>
+                                <li>Remove CDs, DVDs, and media from players</li>
+                                <li>Take out toll transponders and parking passes</li>
+                                <li>Remove roof racks, bike racks, and carriers</li>
+                                <li>Check trunk, under seats, and storage areas</li>
+                                <li>Personal items are NOT covered by insurance</li>
+                                <li>Leave only factory-installed items</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="checklist-card">
+                            <h3><i class="fas fa-key"></i> Security & Documentation</h3>
+                            <ul>
+                                <li>Provide all sets of keys to the driver</li>
+                                <li>Disable or provide instructions for car alarms</li>
+                                <li>Leave about 1/4 tank of gas (not full, not empty)</li>
+                                <li>Have registration and insurance available</li>
+                                <li>Note any special instructions for the driver</li>
+                                <li>Document existing damage thoroughly</li>
+                                <li>Keep a copy of all paperwork</li>
+                                <li>Save contact information for the carrier</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section class="faq-section">
+                    <div class="container">
+                        <div class="section-title">
+                            <h2>Frequently Asked Questions</h2>
+                            <p>Common questions about how car shipping works</p>
+                        </div>
+                        
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>How long does the entire car shipping process take?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>The complete <strong>car shipping timeline</strong> typically takes 1-3 weeks from initial quote to delivery. This includes 1-2 days for quote processing, 1-7 days for carrier assignment, and 2-14 days for actual transit time depending on distance. The entire process from booking to delivery usually ranges from 7-21 days.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>What documents do I need for car shipping?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>You'll need a valid driver's license or ID, vehicle registration (in some cases), and insurance information. The carrier will provide the bill of lading, which is the most important document in the <strong>auto transport process</strong>. This document serves as a receipt and contract between you and the carrier.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Can I track my vehicle during transport?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes, most reputable <strong>auto transport companies</strong> offer real-time tracking. At OK Car Shipping LLC, we provide tracking through our online customer portal. You'll receive regular updates and can check your vehicle's status 24/7. The carrier will also provide contact information and estimated arrival times.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>What happens if my car is damaged during shipping?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>All reputable carriers carry cargo insurance. If damage occurs, document it immediately with photos and note it on the bill of lading before signing. Contact your transport coordinator immediately to file a claim. Most claims are resolved within 30 days. This is why thorough pre-shipment documentation is crucial.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Can I ship a non-running vehicle?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes, you can ship non-running vehicles, but there are additional considerations. Non-operational vehicles require special loading equipment (winches) and may cost more to transport. You must inform us during the quote process so we can arrange the appropriate equipment and provide accurate pricing.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>How much does it cost to ship a car?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p><strong>Car shipping costs</strong> vary based on distance, vehicle size, transport type, and season. Average costs range from $500 for short distances to $2,500 for cross-country enclosed transport. Get a <strong>free auto shipping quote</strong> for accurate pricing specific to your route and vehicle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Quick Links Widget -->
+                <div class="sidebar-widget">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#"><i class="fas fa-calculator"></i> Get Free Quote</a></li>
+                        <li><a href="services.html"><i class="fas fa-truck-moving"></i> Our Services</a></li>
+                        <li><a href="#preparation"><i class="fas fa-clipboard-check"></i> Preparation Checklist</a></li>
+                        <li><a href="#timeline"><i class="fas fa-calendar-alt"></i> Shipping Timeline</a></li>
+                        <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ Section</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Auto Transport Blog</a></li>
+                        <li><a href="tel:1-800-OK-CAR-55"><i class="fas fa-phone-alt"></i> Call Now: 1-800-OK-CAR-55</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quote Form Widget -->
+                <div class="sidebar-widget quote-form-container" id="quoteForm">
+                    <div class="form-header">
+                        <h3>Get Your Free Quote</h3>
+                        <p>Instant, No-Obligation Estimate</p>
+                    </div>
+                    <div class="form-content">
+                        <form class="quote-form" id="sidebarQuoteForm">
+                            <div class="form-group">
+                                <label for="sidebarFromZip">Pickup ZIP Code *</label>
+                                <input type="text" id="sidebarFromZip" name="fromZip" placeholder="e.g., 90210" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sidebarToZip">Delivery ZIP Code *</label>
+                                <input type="text" id="sidebarToZip" name="toZip" placeholder="e.g., 33101" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="sidebarVehicleYear">Year *</label>
+                                    <input type="number" id="sidebarVehicleYear" name="vehicleYear" min="1900" max="2024" placeholder="2020" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sidebarVehicleMake">Make *</label>
+                                    <input type="text" id="sidebarVehicleMake" name="vehicleMake" placeholder="Toyota" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sidebarVehicleModel">Model *</label>
+                                <input type="text" id="sidebarVehicleModel" name="vehicleModel" placeholder="Camry" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sidebarTransportType">Transport Type *</label>
+                                <select id="sidebarTransportType" name="transportType" required>
+                                    <option value="">Select option</option>
+                                    <option value="open">Open Transport</option>
+                                    <option value="enclosed">Enclosed Transport</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sidebarEmail">Email Address *</label>
+                                <input type="email" id="sidebarEmail" name="email" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-calculator"></i> GET INSTANT QUOTE
+                            </button>
+                            
+                            <div class="form-note">
+                                <p><i class="fas fa-lock"></i> Your information is secure</p>
+                                <p><i class="fas fa-clock"></i> Quotes in 60 seconds or less</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Timeline Widget -->
+                <div class="sidebar-widget">
+                    <h3>Average Transit Times</h3>
+                    <div style="margin-top: 20px;">
+                        <div style="background: var(--light); padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                            <h4 style="color: var(--secondary); margin-bottom: 8px; font-size: 1.1rem;">Short Distance</h4>
+                            <p style="color: var(--gray); margin: 0;"><i class="fas fa-road" style="color: var(--primary); margin-right: 8px;"></i> Under 500 miles: 2-4 days</p>
+                        </div>
+                        
+                        <div style="background: var(--light); padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                            <h4 style="color: var(--secondary); margin-bottom: 8px; font-size: 1.1rem;">Medium Distance</h4>
+                            <p style="color: var(--gray); margin: 0;"><i class="fas fa-route" style="color: var(--primary); margin-right: 8px;"></i> 500-1,500 miles: 5-7 days</p>
+                        </div>
+                        
+                        <div style="background: var(--light); padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                            <h4 style="color: var(--secondary); margin-bottom: 8px; font-size: 1.1rem;">Cross-Country</h4>
+                            <p style="color: var(--gray); margin: 0;"><i class="fas fa-globe-americas" style="color: var(--primary); margin-right: 8px;"></i> 1,500+ miles: 7-14 days</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start the Car Shipping Process?</h2>
+            <p>Now that you understand how car shipping works, take the first step with a free, no-obligation quote from OK Car Shipping LLC.</p>
+            
+            <div class="cta-buttons">
+                <a href="tel:1-800-OK-CAR-55" class="btn-primary">
+                    <i class="fas fa-phone-alt"></i> CALL NOW: 1-800-OK-CAR-55
+                </a>
+                <a href="get-quote.html" class="btn-secondary">
+                    <i class="fas fa-calculator"></i> ONLINE QUOTE FORM
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OK Car Shipping LLC</h4>
+                    <p>Your trusted guide to understanding and navigating the auto transport process.</p>
+                    <div class="contact-info" style="margin-top: 20px;">
+                        <p><i class="fas fa-map-marker-alt"></i> Nationwide Service Across USA</p>
+                        <p><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55</p>
+                        <p><i class="fas fa-envelope"></i> quotes@okcarshipping.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>How It Works</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-calculator"></i> Get a Quote</a></li>
+                        <li><a href="#"><i class="fas fa-calendar-check"></i> Schedule Pickup</a></li>
+                        <li><a href="#"><i class="fas fa-truck-loading"></i> Vehicle Inspection</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast"></i> In-Transit Tracking</a></li>
+                        <li><a href="#"><i class="fas fa-check-circle"></i> Delivery & Inspection</a></li>
+                        <li><a href="#"><i class="fas fa-clipboard-check"></i> Preparation Checklist</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fas fa-truck-moving"></i> Services</a></li>
+                        <li><a href="how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="get-quote.html"><i class="fas fa-calculator"></i> Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for shipping tips and exclusive offers.</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <div class="header-social" style="margin-top: 20px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> OK Car Shipping LLC. All rights reserved. | FMCSA Licensed Broker | DOT Registered | MC# 123456</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">Complete guide to understanding how car shipping works. Step-by-step auto transport process explained in detail.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Sticky button functionality
+        const stickyBtn = document.getElementById('stickyQuoteBtn');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show/hide sticky button based on scroll position
+            if (scrollTop > 400) {
+                stickyBtn.classList.add('show');
+            } else {
+                stickyBtn.classList.remove('show');
+            }
+        });
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = question.classList.contains('active');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                    q.nextElementSibling.classList.remove('active');
+                });
+                
+                // Toggle current FAQ if it wasn't active
+                if (!isActive) {
+                    question.classList.add('active');
+                    answer.classList.add('active');
+                }
+            });
+        });
+        
+        // Form submission handler
+        document.getElementById('sidebarQuoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> PROCESSING...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> QUOTE SENT!';
+                submitBtn.style.backgroundColor = '#28a745';
+                
+                // Show success message
+                alert('Thank you! Your quote request has been submitted. A transport specialist will contact you within 30 minutes.');
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = '';
+                }, 3000);
+            }, 1500);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    
+                    // Account for sticky header height
+                    const offset = 100;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without jumping
+                    if (targetId !== '#quoteForm') {
+                        history.pushState(null, null, targetId);
+                    }
+                }
+            });
+        });
+        
+        // Initialize first FAQ as open
+        if (document.querySelector('.faq-question')) {
+            document.querySelector('.faq-question').click();
+        }
+        
+        // Add hover effects to info cards
+        document.querySelectorAll('.info-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
