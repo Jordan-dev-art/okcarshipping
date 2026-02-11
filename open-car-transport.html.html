@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Car Transport Guide | Safe, Affordable Vehicle Shipping | OK Car Shipping LLC</title>
+    <meta name="description" content="Complete guide to open car transport. Learn about open auto transport safety, costs, benefits, and when to choose open vs enclosed transport. Get free quotes.">
+    <meta name="keywords" content="open car transport, open auto transport, open vehicle shipping, car shipping on open trailer, open carrier car shipping, affordable car shipping, economical vehicle transport, open transport vs enclosed, open car carrier, multi-car transport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #e63946;
+            --primary-dark: #c1121f;
+            --secondary: #003049;
+            --accent: #f77f00;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #fff;
+            padding-top: 130px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Sticky Get Quote Button */
+        .sticky-quote-btn {
+            position: fixed;
+            top: -80px;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 9999;
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .sticky-quote-btn.show {
+            top: 80px;
+        }
+
+        .sticky-quote-btn .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sticky-quote-btn p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .sticky-btn {
+            background-color: white;
+            color: var(--primary);
+            border: none;
+            border-radius: 4px;
+            padding: 10px 25px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .sticky-btn:hover {
+            background-color: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header-top {
+            background-color: var(--secondary);
+            color: white;
+            padding: 8px 0;
+        }
+
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        .header-contact span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .header-contact i {
+            color: var(--accent);
+        }
+
+        .header-social a {
+            color: white;
+            margin-left: 15px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .header-social a:hover {
+            color: var(--accent);
+        }
+
+        .header-main {
+            padding: 15px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-right: 12px;
+        }
+
+        .logo-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.9rem;
+            color: var(--secondary);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        .logo-text p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu a {
+            color: var(--dark);
+            text-decoration: none;
+            padding: 10px 18px;
+            font-weight: 500;
+            transition: var(--transition);
+            display: block;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .nav-menu a.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .nav-cta {
+            margin-left: 20px;
+        }
+
+        .nav-cta-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-cta-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 48, 73, 0.92), rgba(0, 48, 73, 0.88)), url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 90px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 900px;
+            margin: 0 auto 35px;
+            opacity: 0.9;
+        }
+
+        .breadcrumb {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            opacity: 0.7;
+        }
+
+        /* Content Layout */
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 50px;
+            padding: 0 0 100px;
+        }
+
+        @media (max-width: 992px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Main Content */
+        .main-content {
+            padding-right: 20px;
+        }
+
+        .section-title {
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            color: var(--secondary);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 5px;
+            background-color: var(--primary);
+            bottom: -15px;
+            left: 0;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        /* Image Comparison */
+        .comparison-section {
+            padding: 60px 0;
+        }
+
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .comparison-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .comparison-image {
+            height: 200px;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 3rem;
+        }
+
+        .comparison-content {
+            padding: 30px;
+        }
+
+        .comparison-content h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .comparison-content h3 i {
+            color: var(--primary);
+        }
+
+        /* Benefits Grid */
+        .benefits-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 35px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            border-top: 5px solid var(--primary);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+
+        .benefit-card h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        /* Vehicle Types */
+        .vehicles-section {
+            padding: 80px 0;
+        }
+
+        .vehicles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .vehicle-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .vehicle-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .vehicle-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .vehicle-card h4 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* Cost Factors */
+        .cost-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+
+        .cost-factors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .cost-factor {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+        }
+
+        .cost-factor h4 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cost-factor h4 i {
+            color: var(--primary);
+        }
+
+        /* Process Steps */
+        .process-section {
+            padding: 80px 0;
+        }
+
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .process-steps:before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            width: 80%;
+            height: 3px;
+            background-color: var(--light-gray);
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .process-steps:before {
+                display: none;
+            }
+        }
+
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 40px;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            line-height: 80px;
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+
+        .step h3 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        /* Comparison Table */
+        .detailed-comparison {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+
+        .comparison-table {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-top: 50px;
+        }
+
+        .table-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .table-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 25px;
+            border-bottom: 1px solid var(--light-gray);
+            align-items: center;
+        }
+
+        .table-row:nth-child(even) {
+            background-color: var(--light);
+        }
+
+        .table-row:last-child {
+            border-bottom: none;
+        }
+
+        .table-row div {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .feature-name {
+            font-weight: 600;
+            color: var(--secondary);
+            text-align: left !important;
+        }
+
+        @media (max-width: 768px) {
+            .table-header, .table-row {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .feature-name {
+                text-align: center !important;
+                font-weight: 700;
+                background-color: var(--light);
+                padding: 15px;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 80px 0;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        .faq-question i {
+            transition: var(--transition);
+        }
+
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-answer.active {
+            padding: 0 30px 30px;
+            max-height: 500px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 150px;
+            height: fit-content;
+        }
+
+        .sidebar-widget {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .sidebar-widget h3 {
+            color: var(--secondary);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        /* Quick Links */
+        .quick-links {
+            list-style-type: none;
+        }
+
+        .quick-links li {
+            margin-bottom: 15px;
+        }
+
+        .quick-links a {
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            transition: var(--transition);
+            border-left: 4px solid transparent;
+        }
+
+        .quick-links a:hover {
+            background-color: var(--light);
+            border-left-color: var(--primary);
+            padding-left: 20px;
+        }
+
+        .quick-links i {
+            color: var(--primary);
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Quote Form */
+        .quote-form-container {
+            background: linear-gradient(to bottom, var(--secondary), #002538);
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .form-header {
+            background-color: var(--primary);
+            padding: 25px;
+            text-align: center;
+        }
+
+        .form-header h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+        }
+
+        .form-content {
+            padding: 30px;
+        }
+
+        .quote-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .quote-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .quote-form input,
+        .quote-form select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: var(--transition);
+        }
+
+        .quote-form input:focus,
+        .quote-form select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.2);
+        }
+
+        .quote-form input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 15px rgba(230, 57, 70, 0.3);
+        }
+
+        .submit-btn i {
+            margin-right: 8px;
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-note i {
+            color: var(--accent);
+            margin-right: 5px;
+        }
+
+        /* Stats Widget */
+        .stats-widget {
+            background: linear-gradient(135deg, var(--secondary), #002538);
+            color: white;
+            text-align: center;
+        }
+
+        .stat-item {
+            margin-bottom: 25px;
+        }
+
+        .stat-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(0, 48, 73, 0.95), rgba(0, 48, 73, 0.92)), url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 25px;
+            font-weight: 900;
+        }
+
+        .cta-section p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(230, 57, 70, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-section h4:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        .footer-links {
+            list-style-type: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 8px;
+        }
+
+        .footer-links a i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 15px;
+            color: var(--accent);
+            width: 20px;
+        }
+
+        .footer-newsletter input {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-newsletter button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .footer-newsletter button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            body {
+                padding-top: 120px;
+            }
+            
+            .sticky-quote-btn.show {
+                top: 70px;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 120px;
+                left: -100%;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                width: 100%;
+            }
+            
+            .nav-menu a {
+                padding: 15px 30px;
+                border-bottom: 1px solid var(--light-gray);
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .main-content {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 110px;
+            }
+            
+            .header-top .container {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Get Quote Button -->
+    <div class="sticky-quote-btn" id="stickyQuoteBtn">
+        <div class="container">
+            <p><i class="fas fa-bolt"></i> Need open car transport? Get your FREE quote now!</p>
+            <a href="#quoteForm" class="sticky-btn">
+                <i class="fas fa-calculator"></i> GET FREE QUOTE
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55</span>
+                    <span><i class="fas fa-envelope"></i> quotes@okcarshipping.com</span>
+                    <span><i class="fas fa-clock"></i> Mon-Sun 8AM-8PM EST</span>
+                </div>
+                <div class="header-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container header-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>OK <span>Car Shipping</span> LLC</h1>
+                        <p>America's Trusted Auto Transport Company</p>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#quoteForm" class="nav-cta-btn">
+                            <i class="fas fa-calculator"></i> GET QUOTE
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Complete Guide to Open Car Transport</h1>
+            <p>Everything you need to know about open auto transport - the most popular, affordable, and reliable method for shipping vehicles nationwide.</p>
+            
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="blog.html">Blog</a>
+                <span>/</span>
+                <span>Open Car Transport Guide</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Introduction -->
+                <section class="section-title">
+                    <h2>What is Open Car Transport?</h2>
+                    <p>Open car transport is the most common and economical method for shipping vehicles across the country. It involves transporting your vehicle on an open-air trailer that can carry multiple vehicles simultaneously.</p>
+                </section>
+
+                <!-- Quick Comparison -->
+                <section class="comparison-section">
+                    <div class="comparison-container">
+                        <div class="comparison-card">
+                            <div class="comparison-image" style="background-color: #e7f5ff;">
+                                <i class="fas fa-truck-loading"></i>
+                            </div>
+                            <div class="comparison-content">
+                                <h3><i class="fas fa-check-circle"></i> Open Transport</h3>
+                                <ul style="list-style-type: none; margin-top: 20px;">
+                                    <li style="padding: 8px 0 8px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                                        <i class="fas fa-dollar-sign" style="position: absolute; left: 0; color: var(--primary);"></i> Most affordable option
+                                    </li>
+                                    <li style="padding: 8px 0 8px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                                        <i class="fas fa-truck" style="position: absolute; left: 0; color: var(--primary);"></i> Carries 6-10 vehicles
+                                    </li>
+                                    <li style="padding: 8px 0 8px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                                        <i class="fas fa-shield-alt" style="position: absolute; left: 0; color: var(--primary);"></i> Safe for daily drivers
+                                    </li>
+                                    <li style="padding: 8px 0 8px 30px; position: relative;">
+                                        <i class="fas fa-bolt" style="position: absolute; left: 0; color: var(--primary);"></i> Fastest availability
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="comparison-card">
+                            <div class="comparison-image" style="background-color: #fff3cd;">
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="comparison-content">
+                                <h3><i class="fas fa-box"></i> Enclosed Transport</h3>
+                                <ul style="list-style-type: none; margin-top: 20px;">
+                                    <li style="padding: 8px 0 8px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                                        <i class="fas fa-dollar-sign" style="position: absolute; left: 0; color: var(--primary);"></i> 30-60% more expensive
+                                    </li>
+                                    <li style="padding: 8px 0 8px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                                        <i class="fas fa-truck" style="position: absolute; left: 0; color: var(--primary);"></i> Carries 2-5 vehicles
+                                    </li>
+                                    <li style="padding: 8px 0 8px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                                        <i class="fas fa-shield-alt" style="position: absolute; left: 0; color: var(--primary);"></i> Maximum protection
+                                    </li>
+                                    <li style="padding: 8px 0 8px 30px; position: relative;">
+                                        <i class="fas fa-clock" style="position: absolute; left: 0; color: var(--primary);"></i> Limited availability
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Benefits Section -->
+                <section class="benefits-section">
+                    <div class="section-title">
+                        <h2>Benefits of Open Car Transport</h2>
+                        <p>Discover why open auto transport is the preferred choice for thousands of customers nationwide</p>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h3>Cost-Effective</h3>
+                            <p>Open transport is 30-60% more affordable than enclosed options, making it the most economical choice for shipping vehicles.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Fast Availability</h3>
+                            <p>More open carriers are available nationwide, resulting in faster pickup times and more flexible scheduling options.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3>High Capacity</h3>
+                            <p>Open carriers can transport 6-10 vehicles simultaneously, making them efficient for both individual and multiple shipments.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Safe & Reliable</h3>
+                            <p>Despite being open-air, these carriers are extremely safe with professional drivers and secure loading systems.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-road"></i>
+                            </div>
+                            <h3>Proven Track Record</h3>
+                            <p>Millions of vehicles are safely transported via open carriers annually, making it the industry standard for a reason.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Ideal for Most Vehicles</h3>
+                            <p>Perfect for daily drivers, family vehicles, SUVs, trucks, and non-luxury cars that don't require special protection.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vehicle Types -->
+                <section class="vehicles-section">
+                    <div class="section-title">
+                        <h2>Best Vehicles for Open Transport</h2>
+                        <p>Open car transport is ideal for these types of vehicles</p>
+                    </div>
+                    
+                    <div class="vehicles-grid">
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h4>Daily Drivers</h4>
+                            <p>Sedans, coupes, hatchbacks, and everyday family vehicles</p>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h4>Trucks & SUVs</h4>
+                            <p>Pickup trucks, SUVs, crossovers, and larger family vehicles</p>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-van"></i>
+                            </div>
+                            <h4>Vans & Minivans</h4>
+                            <p>Passenger vans, minivans, and commercial vans</p>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-tractor"></i>
+                            </div>
+                            <h4>Non-Luxury Cars</h4>
+                            <p>Standard makes and models under $50,000 value</p>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h4>Dealer Inventory</h4>
+                            <p>Dealership vehicles, auction cars, and inventory transfers</p>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>College & Student Cars</h4>
+                            <p>Student vehicles, college moves, and campus relocations</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cost Factors -->
+                <section class="cost-section">
+                    <div class="section-title">
+                        <h2>Open Transport Cost Factors</h2>
+                        <p>Understanding what affects the price of open car shipping</p>
+                    </div>
+                    
+                    <div class="cost-factors">
+                        <div class="cost-factor">
+                            <h4><i class="fas fa-route"></i> Distance</h4>
+                            <p>Longer distances typically cost less per mile. Cross-country shipping averages $0.50-$0.75 per mile.</p>
+                        </div>
+                        
+                        <div class="cost-factor">
+                            <h4><i class="fas fa-ruler-combined"></i> Vehicle Size</h4>
+                            <p>Larger vehicles (SUVs, trucks) take up more space and may cost 10-20% more than compact cars.</p>
+                        </div>
+                        
+                        <div class="cost-factor">
+                            <h4><i class="fas fa-calendar-alt"></i> Season & Timing</h4>
+                            <p>Peak seasons (summer, holidays) see higher demand and prices. Book 2-4 weeks in advance for best rates.</p>
+                        </div>
+                        
+                        <div class="cost-factor">
+                            <h4><i class="fas fa-gas-pump"></i> Fuel Prices</h4>
+                            <p>Fluctuating fuel costs directly impact shipping rates. Prices adjust with current fuel market conditions.</p>
+                        </div>
+                        
+                        <div class="cost-factor">
+                            <h4><i class="fas fa-map-marker-alt"></i> Route Popularity</h4>
+                            <p>Popular routes (CA to TX, NY to FL) often have more carriers and competitive pricing.</p>
+                        </div>
+                        
+                        <div class="cost-factor">
+                            <h4><i class="fas fa-car-battery"></i> Vehicle Condition</h4>
+                            <p>Running vehicles are easier to load. Non-operational vehicles may require special equipment.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background-color: white; padding: 25px; border-radius: 10px; margin-top: 40px; box-shadow: var(--shadow);">
+                        <h3 style="color: var(--secondary); margin-bottom: 20px; text-align: center;">Average Open Transport Costs</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 10px;">Short Distance</h4>
+                                <p style="color: var(--gray);">Under 500 miles: $400-$700</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 10px;">Medium Distance</h4>
+                                <p style="color: var(--gray);">500-1,500 miles: $700-$1,200</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 10px;">Cross-Country</h4>
+                                <p style="color: var(--gray);">1,500+ miles: $1,000-$1,800</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Process Section -->
+                <section class="process-section">
+                    <div class="section-title">
+                        <h2>The Open Transport Process</h2>
+                        <p>How open car shipping works from start to finish</p>
+                    </div>
+                    
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Quote & Booking</h3>
+                            <p>Get a free quote and book your shipment with flexible pickup dates.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Carrier Assignment</h3>
+                            <p>We match your vehicle with an appropriate open carrier in your area.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Vehicle Pickup</h3>
+                            <p>Carrier arrives, inspects your vehicle, and loads it safely onto the trailer.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>In Transit</h3>
+                            <p>Your vehicle travels with other shipments on the open carrier.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h3>Delivery</h3>
+                            <p>Vehicle arrives at destination, final inspection, and paperwork completion.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Detailed Comparison -->
+                <section class="detailed-comparison">
+                    <div class="section-title">
+                        <h2>Open vs Enclosed Transport Comparison</h2>
+                        <p>Detailed comparison to help you choose the right transport method</p>
+                    </div>
+                    
+                    <div class="comparison-table">
+                        <div class="table-header">
+                            <div>Feature</div>
+                            <div>Open Transport</div>
+                            <div>Enclosed Transport</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="feature-name">Cost</div>
+                            <div>30-60% more affordable</div>
+                            <div>Premium pricing</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="feature-name">Protection Level</div>
+                            <div>Good - protects from major damage</div>
+                            <div>Excellent - complete protection</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="feature-name">Weather Exposure</div>
+                            <div>Exposed to elements</div>
+                            <div>Fully protected</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="feature-name">Capacity</div>
+                            <div>6-10 vehicles per trailer</div>
+                            <div>2-5 vehicles per trailer</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="feature-name">Availability</div>
+                            <div>High - many carriers available</div>
+                            <div>Limited - specialized service</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="feature-name">Best For</div>
+                            <div>Daily drivers, standard vehicles</div>
+                            <div>Luxury, classic, exotic vehicles</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="feature-name">Transit Time</div>
+                            <div>Usually faster (more carriers)</div>
+                            <div>May be slower (limited carriers)</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="feature-name">Insurance</div>
+                            <div>Standard liability coverage</div>
+                            <div>Higher value coverage available</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Safety & Insurance -->
+                <section class="benefits-section" style="background-color: white;">
+                    <div class="section-title">
+                        <h2>Safety & Insurance Coverage</h2>
+                        <p>Understanding protection and insurance for open transport</p>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Carrier Insurance</h3>
+                            <p>All carriers carry minimum liability insurance as required by law (typically $100,000-$1,000,000).</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <h3>Cargo Insurance</h3>
+                            <p>Additional cargo insurance is available for added protection of your vehicle's value.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <h3>Inspection Process</h3>
+                            <p>Thorough pre and post-transport inspections document vehicle condition for insurance purposes.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3>Professional Drivers</h3>
+                            <p>Experienced, licensed drivers with clean records and proper training in vehicle securing.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3>Secure Loading</h3>
+                            <p>Professional tie-down systems and wheel straps ensure vehicles stay securely in place.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>24/7 Support</h3>
+                            <p>Constant communication and support throughout the entire transport process.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section class="faq-section">
+                    <div class="section-title">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Common questions about open car transport answered</p>
+                    </div>
+                    
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Is open car transport safe for my vehicle?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, open car transport is very safe for most vehicles. Millions of cars are shipped via open carriers annually with minimal issues. While there's exposure to weather and road debris, professional carriers use secure tie-down systems and experienced drivers. For daily drivers and standard vehicles, open transport provides excellent safety at an affordable price.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How much does open car transport cost?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Open transport costs vary based on distance, vehicle size, season, and route. Average costs range from $400-$700 for short distances (under 500 miles), $700-$1,200 for medium distances (500-1,500 miles), and $1,000-$1,800 for cross-country shipments. Get a free quote for your specific route and vehicle for accurate pricing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Will my car get dirty during open transport?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Your vehicle may get some road dust, dirt, or bug splatters during open transport, especially on long trips. This is normal and expected. We recommend washing your vehicle before pickup (makes inspection easier) and planning to wash it upon delivery. Most customers find a simple car wash upon delivery addresses any accumulated dirt from the journey.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How long does open transport take?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Transit times for open transport are typically: 2-4 days for distances under 500 miles, 5-7 days for 500-1,500 miles, and 7-14 days for cross-country shipments. Open transport often has faster availability than enclosed transport since there are more open carriers on the road. Weather, traffic, and route specifics can affect exact timing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Can I ship personal items in my car during open transport?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>No, for safety and insurance reasons, personal items should not be left in your vehicle during open transport. Carriers typically prohibit personal belongings in vehicles, and these items are not covered by insurance if lost or damaged. Remove all personal items before pickup, including items in the glove compartment, trunk, and under seats.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>When should I choose enclosed over open transport?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Choose enclosed transport for: luxury vehicles ($75,000+ value), classic/antique cars, exotic sports cars, vehicles with custom paint jobs, collectible/rare vehicles, or when shipping during severe weather seasons. For daily drivers, family vehicles, standard cars, trucks, and SUVs, open transport is the practical and economical choice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Quick Links Widget -->
+                <div class="sidebar-widget">
+                    <h3>Open Transport Guide</h3>
+                    <ul class="quick-links">
+                        <li><a href="#"><i class="fas fa-check-circle"></i> What is Open Transport?</a></li>
+                        <li><a href="#"><i class="fas fa-dollar-sign"></i> Cost Factors</a></li>
+                        <li><a href="#"><i class="fas fa-car"></i> Best Vehicles For Open</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Safety & Insurance</a></li>
+                        <li><a href="#"><i class="fas fa-exchange-alt"></i> Open vs Enclosed</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ Section</a></li>
+                        <li><a href="tel:1-800-OK-CAR-55"><i class="fas fa-phone-alt"></i> Call: 1-800-OK-CAR-55</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quote Form Widget -->
+                <div class="sidebar-widget quote-form-container" id="quoteForm">
+                    <div class="form-header">
+                        <h3>Get Open Transport Quote</h3>
+                        <p>Free, No-Obligation Estimate</p>
+                    </div>
+                    <div class="form-content">
+                        <form class="quote-form" id="sidebarQuoteForm">
+                            <div class="form-group">
+                                <label for="sidebarFromZip">Pickup ZIP Code *</label>
+                                <input type="text" id="sidebarFromZip" name="fromZip" placeholder="e.g., 90210" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sidebarToZip">Delivery ZIP Code *</label>
+                                <input type="text" id="sidebarToZip" name="toZip" placeholder="e.g., 33101" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="sidebarVehicleYear">Year *</label>
+                                    <input type="number" id="sidebarVehicleYear" name="vehicleYear" min="1900" max="2024" placeholder="2020" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sidebarVehicleMake">Make *</label>
+                                    <input type="text" id="sidebarVehicleMake" name="vehicleMake" placeholder="Toyota" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sidebarVehicleModel">Model *</label>
+                                <input type="text" id="sidebarVehicleModel" name="vehicleModel" placeholder="Camry" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sidebarTransportType">Transport Type</label>
+                                <select id="sidebarTransportType" name="transportType">
+                                    <option value="open" selected>Open Transport</option>
+                                    <option value="enclosed">Enclosed Transport</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sidebarEmail">Email Address *</label>
+                                <input type="email" id="sidebarEmail" name="email" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-calculator"></i> GET OPEN TRANSPORT QUOTE
+                            </button>
+                            
+                            <div class="form-note">
+                                <p><i class="fas fa-lock"></i> Your information is secure</p>
+                                <p><i class="fas fa-clock"></i> Quotes in 60 seconds</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Stats Widget -->
+                <div class="sidebar-widget stats-widget">
+                    <h3 style="color: white; border-bottom-color: rgba(255,255,255,0.2);">Open Transport Stats</h3>
+                    <div class="stat-item">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">of vehicles shipped via open transport</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">30-60%</span>
+                        <span class="stat-label">More affordable than enclosed</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">6-10</span>
+                        <span class="stat-label">Vehicles per open carrier</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">99.7%</span>
+                        <span class="stat-label">Damage-free delivery rate</span>
+                    </div>
+                </div>
+
+                <!-- When to Choose Widget -->
+                <div class="sidebar-widget">
+                    <h3>When to Choose Open Transport</h3>
+                    <ul style="list-style-type: none; margin-top: 20px;">
+                        <li style="padding: 10px 0 10px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--primary);"></i> Daily drivers & family cars
+                        </li>
+                        <li style="padding: 10px 0 10px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--primary);"></i> Standard trucks & SUVs
+                        </li>
+                        <li style="padding: 10px 0 10px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--primary);"></i> College student vehicles
+                        </li>
+                        <li style="padding: 10px 0 10px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--primary);"></i> Dealer inventory moves
+                        </li>
+                        <li style="padding: 10px 0 10px 30px; position: relative; border-bottom: 1px solid var(--light-gray);">
+                            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--primary);"></i> Military relocations
+                        </li>
+                        <li style="padding: 10px 0 10px 30px; position: relative;">
+                            <i class="fas fa-check" style="position: absolute; left: 0; color: var(--primary);"></i> Budget-conscious shipping
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Ship Your Vehicle with Open Transport?</h2>
+            <p>Get your free, no-obligation quote for affordable, reliable open car transport. Join thousands of satisfied customers who trust OK Car Shipping LLC for their vehicle shipping needs.</p>
+            
+            <div class="cta-buttons">
+                <a href="tel:1-800-OK-CAR-55" class="btn-primary">
+                    <i class="fas fa-phone-alt"></i> CALL NOW: 1-800-OK-CAR-55
+                </a>
+                <a href="get-quote.html" class="btn-secondary">
+                    <i class="fas fa-calculator"></i> ONLINE QUOTE FORM
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OK Car Shipping LLC</h4>
+                    <p>Your trusted partner for affordable, reliable open car transport nationwide.</p>
+                    <div class="contact-info" style="margin-top: 20px;">
+                        <p><i class="fas fa-map-marker-alt"></i> Nationwide Service Across USA</p>
+                        <p><i class="fas fa-phone-alt"></i> 1-800-OK-CAR-55</p>
+                        <p><i class="fas fa-envelope"></i> quotes@okcarshipping.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Transport Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-truck-loading"></i> Open Car Transport</a></li>
+                        <li><a href="#"><i class="fas fa-truck-moving"></i> Enclosed Transport</a></li>
+                        <li><a href="#"><i class="fas fa-motorcycle"></i> Motorcycle Shipping</a></li>
+                        <li><a href="#"><i class="fas fa-car"></i> Classic Car Transport</a></li>
+                        <li><a href="#"><i class="fas fa-flag-usa"></i> Military Relocation</a></li>
+                        <li><a href="#"><i class="fas fa-building"></i> Dealer Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fas fa-truck-moving"></i> Services</a></li>
+                        <li><a href="how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="get-quote.html"><i class="fas fa-calculator"></i> Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for shipping tips and exclusive offers.</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <div class="header-social" style="margin-top: 20px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> OK Car Shipping LLC. All rights reserved. | FMCSA Licensed Broker | DOT Registered | MC# 123456</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">Complete guide to open car transport - the most affordable and popular method for shipping vehicles nationwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Sticky button functionality
+        const stickyBtn = document.getElementById('stickyQuoteBtn');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show/hide sticky button based on scroll position
+            if (scrollTop > 400) {
+                stickyBtn.classList.add('show');
+            } else {
+                stickyBtn.classList.remove('show');
+            }
+        });
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = question.classList.contains('active');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                    q.nextElementSibling.classList.remove('active');
+                });
+                
+                // Toggle current FAQ if it wasn't active
+                if (!isActive) {
+                    question.classList.add('active');
+                    answer.classList.add('active');
+                }
+            });
+        });
+        
+        // Form submission handler
+        document.getElementById('sidebarQuoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> PROCESSING...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> QUOTE SENT!';
+                submitBtn.style.backgroundColor = '#28a745';
+                
+                // Show success message
+                alert('Thank you! Your open transport quote request has been submitted. A specialist will contact you within 30 minutes.');
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    this.reset();
+                    document.getElementById('sidebarTransportType').value = 'open';
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = '';
+                }, 3000);
+            }, 1500);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    
+                    // Account for sticky header height
+                    const offset = 100;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without jumping
+                    if (targetId !== '#quoteForm') {
+                        history.pushState(null, null, targetId);
+                    }
+                }
+            });
+        });
+        
+        // Initialize first FAQ as open
+        if (document.querySelector('.faq-question')) {
+            document.querySelector('.faq-question').click();
+        }
+        
+        // Add hover effects to cards
+        document.querySelectorAll('.benefit-card, .vehicle-card, .comparison-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
